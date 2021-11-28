@@ -46,7 +46,29 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* Siit on meie styling */
 body {
+	font-family: sans-serif;
     display: flex;
+    flex-direction: column;
+}
+
+h1 {
+	font-size: 40px;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+table {
+    flex-direction: row;
+}
+
+a {
+	text-decoration: none;
+	font-size: 40px;
+	color:darkcyan;
+}
+
+.meme {
+	font-size: 20px;
 }
