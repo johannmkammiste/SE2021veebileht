@@ -66,7 +66,7 @@ body {
 }
 
 .main {
-    max-width: 550px;
+    max-width: 2000px;
     margin: 7rem auto;
     flex-direction: row;
     align-items: flex-start;
@@ -127,7 +127,6 @@ select {
 }
 
 .post-container1, .post-container2, .post-container3 {
-    width: 95%;
     height: auto;
     padding: 5px;
     margin: 15px auto;
