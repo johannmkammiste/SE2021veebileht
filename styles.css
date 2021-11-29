@@ -61,6 +61,16 @@ body {
 	font-family: sans-serif;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    background-color: #ffd2b5;
+}
+
+.main {
+    max-width: 550px;
+    margin: 7rem auto;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
 h1 {
@@ -77,8 +87,26 @@ a {
 	text-decoration: none;
 	font-size: 40px;
 	color:darkcyan;
+    text-decoration: none;
+    color: #ffffff;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff6900;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: sans-serif;
+  }
+.heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    font-family: sans-serif;
+}
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -98,14 +126,14 @@ select {
     border-radius: 5px;
 }
 
-.post-container {
+.post-container1, .post-container2, .post-container3 {
     width: 95%;
     height: auto;
     padding: 5px;
     margin: 15px auto;
+    align-items: flex-start;
     border-radius: 5px;
     background-color: #eee;
-    /* border: 1px solid red; */
 }
 
 h3 {
@@ -113,18 +141,21 @@ h3 {
 }
 
 .post {
-    width: 95%;
     max-width: 200rem;
     height: auto;
     flex-direction: column;
     align-items: center;
     display: flex;
     padding: 10px;
-    background-color: #fff;
     color: #000;
     margin: 10px auto;
     border-radius: 5px;
     box-shadow: 3px 3px 5px #ddd;
+    width: 90%;
+    padding: 2rem;
+    background-color: #ff6900;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .post>* {
@@ -135,11 +166,16 @@ h3 {
 
 .title {
     font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .author {
     font-style: italic;
     font-size: 12px;
+    font-weight: bold;
 }
 
 .content span {
@@ -158,6 +194,33 @@ img {
 .about {
     font-size: 2em;
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.navigation {
+    display: flex;
+    padding: 1.3rem;
+}
+.nav {
+    margin-right: 2rem;
+}
+
+.logo {
+    margin-left: 2rem;
+}
+
+.main-nav{
+    width: 90%;
+    padding: 2rem;
+    background-color: #ff6900;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 
 @media screen and (max-width: 400px) {
     img {
