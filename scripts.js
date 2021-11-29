@@ -9,10 +9,8 @@ window.onload = function() {
 
 const container = document.querySelector(".post-container");
 const renderPosts = (postType) => {
-  // Our proxy that makes cross origin fetching possible
-  const proxy = "https://cors-anywhere.herokuapp.com/";
 
-  fetch(`${proxy}https://www.reddit.com/r/Memes/${postType}.json`)
+  fetch(`https://www.reddit.com/r/Memes/${postType}.json`)
     .then(function(res) {
       // Return the response in JSON format
       return res.json();
@@ -49,7 +47,7 @@ const renderPosts = (postType) => {
       console.log(err); // Log error if any
     });
 
-    fetch(`${proxy}https://www.reddit.com/r/terriblefacebookmemes/${postType}.json`)
+    fetch(`https://www.reddit.com/r/terriblefacebookmemes/${postType}.json`)
     .then(function(res) {
       // Return the response in JSON format
       return res.json();
@@ -86,7 +84,7 @@ const renderPosts = (postType) => {
       console.log(err); // Log error if any
     });
 
-    fetch(`${proxy}https://www.reddit.com/r/sbubby/${postType}.json`)
+    fetch(`https://www.reddit.com/r/sbubby/${postType}.json`)
     .then(function(res) {
       // Return the response in JSON format
       return res.json();
