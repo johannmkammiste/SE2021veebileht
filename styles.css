@@ -46,6 +46,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body {
+    display: flex;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /* Siit on meie styling */
 body {
 	font-family: sans-serif;
@@ -69,6 +79,88 @@ a {
 	color:darkcyan;
 }
 
-.meme {
-	font-size: 20px;
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    word-break: break-all;
+}
+
+.options {
+    width: 165px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+select {
+    width: 75px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.post-container {
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    margin: 15px auto;
+    border-radius: 5px;
+    background-color: #eee;
+    /* border: 1px solid red; */
+}
+
+h3 {
+    text-align: center;
+}
+
+.post {
+    width: 95%;
+    max-width: 200rem;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #ddd;
+}
+
+.post>* {
+    display: flex;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.author {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.content span {
+    color: lightblue;
+}
+
+img {
+    border: 3px solid black;
+    flex-grow: 1 1 0;
+    width: 100%;
+    height: 100%;
+    max-width: 70rem;
+    max-height: 70rem;
+}
+
+.about {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 400px) {
+    img {
+        flex-direction: row;
+    }
 }
