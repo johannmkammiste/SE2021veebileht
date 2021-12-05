@@ -6,6 +6,17 @@ window.onload = function() {
     var dateeur = day+'.'+month+'.'+year;
     document.getElementById('logo').innerHTML = dateeur;
 }
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
 const container1 = document.querySelector(".post-container1");
 const container2 = document.querySelector(".post-container2");
 const container3 = document.querySelector(".post-container3");

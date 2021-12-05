@@ -5,30 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Homepage</title>
     </script>   
 </head>
 <body>
-    <nav>
-        <div class="logo"><a href="home.html">Top memes</a></div>
+  <header class="header">
+    <nav class="navbar">
+        <a href="home.html" class="logo">Top memes</a>
         <div class="logo" id="logo"></div>
-        <div class="navigation">
-          <div class="nav"><a href="home.html">Home</a></div>
-          <div class="nav"><a href="archive.html">Archive</a></div>
-          <div class="nav"><a href="about.html">About</a></div>
-        </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="home.html">Home</a></li>
+          <li class="nav-item"><a href="archive.html">Archive</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
     </nav>
-  
+  </header>
     <section class="main">
-      <table>
-        <tbody>
-        <tr>
-        <td><div class="post-container1"></div></td>
-        <td><div class="post-container2"></div></td>
-        <td><div class="post-container3"></div></td>
-        </tr>
-        </tbody>
-      </table>
+      <div class="post-container1"></div>
+      <div class="post-container2"></div>
+      <div class="post-container3"></div>
     </section>
       
 </body>
